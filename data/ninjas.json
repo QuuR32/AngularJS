@@ -1,0 +1,25 @@
+[{
+	"name": "a",
+	"belt": "orange",
+	"rate": 10,
+	"available": true,
+	"thumb": "content/img/a.jpg"
+}, {
+	"name": "b",
+	"belt": "blue",
+	"rate": 50,
+	"available": true,
+	"thumb": "content/img/a.jpg"
+}, {
+	"name": "c",
+	"belt": "red",
+	"rate": 40,
+	"available": false,
+	"thumb": "content/img/a.jpg"
+}, {
+	"name": "d",
+	"belt": "green",
+	"rate": 30,
+	"available": true,
+	"thumb": "content/img/a.jpg"
+}]
