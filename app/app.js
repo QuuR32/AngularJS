@@ -6,19 +6,19 @@ myNinjaApp.config(['$routeProvider', '$locationProvider', function($routeProvide
 
   $routeProvider
     .when('/home', {
-      templateUrl: 'views/home.html',
+      templateUrl: 'AngularJS/views/home.html',
       controller: 'NinjaController'
     })
     .when('/contact', {
-      templateUrl: 'views/contact.html',
+      templateUrl: 'AngularJS/views/contact.html',
       controller: 'ContactController'
     })
     .when('/contact-success', {
-      templateUrl: 'views/contact-success.html',
+      templateUrl: 'AngularJS/views/contact-success.html',
       controller: 'ContactController'
     })
     .when('/directory', {
-      templateUrl: 'views/directory.html',
+      templateUrl: 'AngularJS/views/directory.html',
       controller: 'NinjaController'
     })
     .otherwise({
@@ -33,7 +33,7 @@ myNinjaApp.directive('randomNinja', [function() {
       ninjas: '=',
       title: '='
     },
-    templateUrl: 'views/random.html ',
+    templateUrl: '/AngularJS/views/random.html ',
     transclude: true,
     replace: true,
     controller: function($scope){
@@ -69,7 +69,7 @@ myNinjaApp.controller('NinjaController', ['$scope', '$http', function($scope, $h
 
   $scope.message = "Heyyy";
 
-  $http.get('data/ninjas.json').then(function(result){
+  $http.get('/AngularJS/data/ninjas.json').then(function(result){
     $scope.ninjas = result.data;
   });
 
